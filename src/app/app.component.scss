@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@430&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inter;
+  color: #1d1d1f;
+}
+main {
+    position: relative;
+    padding: 10px 30px;
+    height: 90vh;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 20px;
+  }
+  div {
+    text-align: center;
+    background: rgba(0,0,0,.002); 
+    border-radius: 5px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,.1);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
+    border: 1px solid #e1e1e1;
+  }
+  div:hover {
+    box-shadow: 0px 10px 40px rgba(0,0,0,.15);
+    transform: translate(0, -5px);
+    background: rgba(0,0,0,.03);
+  }
+  
+  
+  div:first-child {
+    grid-column: span 1;
+  }
+  div:nth-child(2) {
+    grid-column: span 3;
+  }
+  div:nth-child(3) {
+    grid-column: span 1;
+    grid-row: span 5;
+  }
+  div:nth-child(4) {
+    grid-column: span 3;
+    grid-row: span 5;
+  }
+  div:nth-child(5) {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+  .logo {
+    font-size: 30px;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
